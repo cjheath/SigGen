@@ -1,0 +1,253 @@
+EESchema Schematic File Version 4
+LIBS:SigGen-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SigGen:Arduino_Nano_v3.x A1
+U 1 1 5C8866C1
+P 5750 3600
+F 0 "A1" H 5750 2511 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5750 2420 50  0000 C CNN
+F 2 "SigGen:Arduino_Nano" H 5900 2650 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5750 2600 50  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SigGen:ILI9341_SPI_Touch_SD U1
+U 1 1 5C88CE2B
+P 3500 3500
+F 0 "U1" H 3500 4515 50  0000 C CNN
+F 1 "ILI9341_SPI_Touch_SD" H 3500 4424 50  0000 C CNN
+F 2 "TJCTM24024-SPI" H 3550 2500 50  0001 C CNN
+F 3 "www.rogerclark.net" H 3550 2600 50  0001 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SigGen:HC-SR08-AD9851 M1
+U 1 1 5C888F8D
+P 7450 3450
+F 0 "M1" H 7450 2411 50  0000 C CNN
+F 1 "HC-SR08-AD9851" H 7450 2320 50  0000 C CNN
+F 2 "SigGen:HC-SR08-AD9851" H 7090 4210 50  0001 C CNN
+F 3 "" H 7090 4210 50  0001 C CNN
+	1    7450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1950 7300 1950
+Wire Wire Line
+	7300 1950 7300 2500
+Wire Wire Line
+	7300 2500 7600 2500
+Connection ~ 7300 2500
+Wire Wire Line
+	7450 5200 7450 4400
+Wire Wire Line
+	4500 4250 4500 3650
+Wire Wire Line
+	4500 2150 6750 2150
+Wire Wire Line
+	6750 2150 6750 3750
+Wire Wire Line
+	6750 3750 6850 3750
+Wire Wire Line
+	4500 4250 5050 4250
+Wire Wire Line
+	6850 3850 6650 3850
+Wire Wire Line
+	6650 3850 6650 2250
+Wire Wire Line
+	6650 2250 4600 2250
+Wire Wire Line
+	4700 4900 2250 4900
+Wire Wire Line
+	2250 4900 2250 3250
+Wire Wire Line
+	2250 3250 2750 3250
+Wire Wire Line
+	2150 5000 2150 3050
+Wire Wire Line
+	2150 3050 2750 3050
+Wire Wire Line
+	2750 2850 2550 2850
+Wire Wire Line
+	2550 1950 5850 1950
+Connection ~ 5850 1950
+Wire Wire Line
+	2750 2950 2050 2950
+Wire Wire Line
+	2050 2950 2050 5200
+Wire Wire Line
+	4500 4250 4500 4700
+Wire Wire Line
+	4500 4700 2450 4700
+Wire Wire Line
+	2450 4700 2450 3750
+Wire Wire Line
+	2450 3750 2750 3750
+Connection ~ 4500 4250
+Wire Wire Line
+	2450 3750 2450 3450
+Wire Wire Line
+	2450 3450 2750 3450
+Connection ~ 2450 3750
+Wire Wire Line
+	4400 4600 2550 4600
+Wire Wire Line
+	2550 4600 2550 3850
+Wire Wire Line
+	2550 3850 2750 3850
+Wire Wire Line
+	4600 4800 2350 4800
+Wire Wire Line
+	2350 4800 2350 3950
+Wire Wire Line
+	2350 3950 2750 3950
+Text Label 4600 2250 0    50   ~ 0
+MOSI
+Wire Wire Line
+	2750 3150 2650 3150
+Wire Wire Line
+	2650 3150 2650 2050
+Wire Wire Line
+	2650 2050 6550 2050
+Wire Wire Line
+	6550 2050 6550 2950
+Wire Wire Line
+	6550 2950 6450 2950
+Wire Wire Line
+	2350 3950 2350 3350
+Wire Wire Line
+	2350 3350 2750 3350
+Connection ~ 2350 3950
+Text Label 5150 5200 0    50   ~ 0
+GND
+Text Label 7300 1950 0    50   ~ 0
+3v3
+Wire Wire Line
+	4600 2250 4600 3450
+Wire Wire Line
+	5050 4050 4600 4050
+Connection ~ 4600 4050
+Wire Wire Line
+	4600 4050 4600 4800
+Wire Wire Line
+	5050 4150 4300 4150
+Wire Wire Line
+	4300 4150 4300 4500
+Wire Wire Line
+	4300 4500 2650 4500
+Wire Wire Line
+	2650 4500 2650 4050
+Wire Wire Line
+	2650 4050 2750 4050
+Wire Wire Line
+	2750 3650 2650 3650
+Wire Wire Line
+	2650 3650 2650 4050
+Connection ~ 2650 4050
+Wire Wire Line
+	4250 3650 4500 3650
+Connection ~ 4500 3650
+Wire Wire Line
+	4500 3650 4500 2150
+Wire Wire Line
+	4250 3450 4600 3450
+Connection ~ 4600 3450
+Wire Wire Line
+	4600 3450 4600 4050
+Wire Wire Line
+	2550 1950 2550 2650
+$Comp
+L Device:R_US R1
+U 1 1 5C95266A
+P 2200 2650
+F 0 "R1" H 2268 2696 50  0000 L CNN
+F 1 "50R" H 2268 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2240 2640 50  0001 C CNN
+F 3 "~" H 2200 2650 50  0001 C CNN
+	1    2200 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 3550 1950 3550
+Wire Wire Line
+	5050 3350 4250 3350
+Text Label 4500 2150 0    50   ~ 0
+SCK
+Wire Wire Line
+	5850 4650 5850 5200
+Connection ~ 5850 5200
+Wire Wire Line
+	5850 5200 7450 5200
+Wire Wire Line
+	5850 2550 5850 1950
+Wire Wire Line
+	1950 3550 1950 2650
+Wire Wire Line
+	1950 2650 2050 2650
+Wire Wire Line
+	2350 2650 2550 2650
+Connection ~ 2550 2650
+Wire Wire Line
+	2550 2650 2550 2850
+Wire Wire Line
+	4300 4150 4300 3550
+Wire Wire Line
+	4300 3550 4250 3550
+Connection ~ 4300 4150
+Wire Wire Line
+	4700 4900 4700 3550
+Wire Wire Line
+	4700 3550 5050 3550
+Wire Wire Line
+	6650 4800 5000 4800
+Wire Wire Line
+	6650 3950 6850 3950
+Wire Wire Line
+	6650 3950 6650 4800
+Wire Wire Line
+	5050 3750 4400 3750
+Wire Wire Line
+	4400 3750 4400 4600
+Wire Wire Line
+	5000 4800 5000 3950
+Wire Wire Line
+	5000 3950 5050 3950
+Wire Wire Line
+	5050 3850 4900 3850
+Wire Wire Line
+	4900 3850 4900 4900
+Wire Wire Line
+	4900 4900 6750 4900
+Wire Wire Line
+	6750 4900 6750 4050
+Wire Wire Line
+	6750 4050 6850 4050
+Wire Wire Line
+	4800 5000 4800 3250
+Wire Wire Line
+	4800 3250 5050 3250
+Wire Wire Line
+	2150 5000 4800 5000
+Text Label 4300 4500 0    50   ~ 0
+MISO
+Text Label 6550 2050 0    50   ~ 0
+RESET
+Wire Wire Line
+	2050 5200 5850 5200
+$EndSCHEMATC

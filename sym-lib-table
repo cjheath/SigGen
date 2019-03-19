@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SigGen)(type Legacy)(uri ${KIPRJMOD}/SigGen.lib)(options "")(descr ""))
+  (lib (name arduino_nano_v3.x)(type Legacy)(uri /Users/cjh/Archive/Downloads/arduino_nano_v3.x.lib)(options "")(descr ""))
+)
