@@ -15,14 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SigGen:Arduino_Nano_v3.x A1
+L SigGen:Arduino_Nano_v3.x Ard1
 U 1 1 5C8866C1
-P 5750 3600
-F 0 "A1" H 5750 2511 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5750 2420 50  0000 C CNN
-F 2 "SigGen:Arduino_Nano" H 5900 2650 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5750 2600 50  0001 C CNN
-	1    5750 3600
+P 5800 3600
+F 0 "Ard1" H 5800 2511 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5800 2420 50  0000 C CNN
+F 2 "SigGen:Arduino_Nano" H 5950 2650 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5800 2600 50  0001 C CNN
+	1    5800 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -39,39 +39,39 @@ $EndComp
 $Comp
 L SigGen:HC-SR08-AD9851 M1
 U 1 1 5C888F8D
-P 7450 3450
-F 0 "M1" H 7450 2411 50  0000 C CNN
-F 1 "HC-SR08-AD9851" H 7450 2320 50  0000 C CNN
-F 2 "SigGen:HC-SR08-AD9851" H 7090 4210 50  0001 C CNN
-F 3 "" H 7090 4210 50  0001 C CNN
-	1    7450 3450
+P 7700 3450
+F 0 "M1" H 7700 2411 50  0000 C CNN
+F 1 "HC-SR08-AD9851" H 7700 2320 50  0000 C CNN
+F 2 "SigGen:HC-SR08-AD9851" H 7340 4210 50  0001 C CNN
+F 3 "" H 7340 4210 50  0001 C CNN
+	1    7700 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 1950 7300 1950
+	5900 1950 7550 1950
 Wire Wire Line
-	7300 1950 7300 2500
+	7550 1950 7550 2150
 Wire Wire Line
-	7300 2500 7600 2500
-Connection ~ 7300 2500
+	7550 2500 7850 2500
+Connection ~ 7550 2500
 Wire Wire Line
-	7450 5200 7450 4400
+	7700 5200 7700 4900
 Wire Wire Line
 	4500 4250 4500 3650
 Wire Wire Line
-	4500 2150 6750 2150
+	4500 2150 7000 2150
 Wire Wire Line
-	6750 2150 6750 3750
+	7000 2150 7000 3750
 Wire Wire Line
-	6750 3750 6850 3750
+	7000 3750 7100 3750
 Wire Wire Line
-	4500 4250 5050 4250
+	4500 4250 5100 4250
 Wire Wire Line
-	6850 3850 6650 3850
+	7100 3850 6900 3850
 Wire Wire Line
-	6650 3850 6650 2250
+	6900 3850 6900 2250
 Wire Wire Line
-	6650 2250 4600 2250
+	6900 2250 4600 2250
 Wire Wire Line
 	4700 4900 2250 4900
 Wire Wire Line
@@ -85,8 +85,8 @@ Wire Wire Line
 Wire Wire Line
 	2750 2850 2550 2850
 Wire Wire Line
-	2550 1950 5850 1950
-Connection ~ 5850 1950
+	2550 1950 5900 1950
+Connection ~ 5900 1950
 Wire Wire Line
 	2750 2950 2050 2950
 Wire Wire Line
@@ -117,36 +117,34 @@ Wire Wire Line
 	2350 4800 2350 3950
 Wire Wire Line
 	2350 3950 2750 3950
-Text Label 4600 2250 0    50   ~ 0
-MOSI
 Wire Wire Line
 	2750 3150 2650 3150
 Wire Wire Line
 	2650 3150 2650 2050
 Wire Wire Line
-	2650 2050 6550 2050
+	2650 2050 6800 2050
 Wire Wire Line
-	6550 2050 6550 2950
+	6800 2050 6800 2950
 Wire Wire Line
-	6550 2950 6450 2950
+	6800 2950 6500 2950
 Wire Wire Line
 	2350 3950 2350 3350
 Wire Wire Line
 	2350 3350 2750 3350
 Connection ~ 2350 3950
-Text Label 5150 5200 0    50   ~ 0
+Text Label 5200 5200 0    50   ~ 0
 GND
-Text Label 7300 1950 0    50   ~ 0
+Text Label 7550 1950 0    50   ~ 0
 3v3
 Wire Wire Line
-	4600 2250 4600 3450
+	4600 2250 4600 2500
 Wire Wire Line
-	5050 4050 4600 4050
+	5100 4050 4600 4050
 Connection ~ 4600 4050
 Wire Wire Line
 	4600 4050 4600 4800
 Wire Wire Line
-	5050 4150 4300 4150
+	5100 4150 4300 4150
 Wire Wire Line
 	4300 4150 4300 4500
 Wire Wire Line
@@ -164,7 +162,7 @@ Wire Wire Line
 	4250 3650 4500 3650
 Connection ~ 4500 3650
 Wire Wire Line
-	4500 3650 4500 2150
+	4500 3650 4500 2400
 Wire Wire Line
 	4250 3450 4600 3450
 Connection ~ 4600 3450
@@ -186,16 +184,14 @@ $EndComp
 Wire Wire Line
 	2750 3550 1950 3550
 Wire Wire Line
-	5050 3350 4250 3350
-Text Label 4500 2150 0    50   ~ 0
-SCK
+	5100 3350 4250 3350
 Wire Wire Line
-	5850 4650 5850 5200
-Connection ~ 5850 5200
+	5900 4650 5900 5200
+Connection ~ 5900 5200
 Wire Wire Line
-	5850 5200 7450 5200
+	5900 5200 7700 5200
 Wire Wire Line
-	5850 2550 5850 1950
+	5900 2550 5900 1950
 Wire Wire Line
 	1950 3550 1950 2650
 Wire Wire Line
@@ -213,41 +209,314 @@ Connection ~ 4300 4150
 Wire Wire Line
 	4700 4900 4700 3550
 Wire Wire Line
-	4700 3550 5050 3550
+	4700 3550 5100 3550
 Wire Wire Line
-	6650 4800 5000 4800
+	6900 4800 5050 4800
 Wire Wire Line
-	6650 3950 6850 3950
+	6900 3950 7100 3950
 Wire Wire Line
-	6650 3950 6650 4800
+	6900 3950 6900 4800
 Wire Wire Line
-	5050 3750 4400 3750
+	5100 3750 4400 3750
 Wire Wire Line
 	4400 3750 4400 4600
 Wire Wire Line
-	5000 4800 5000 3950
+	5050 4800 5050 3950
 Wire Wire Line
-	5000 3950 5050 3950
+	5050 3950 5100 3950
 Wire Wire Line
-	5050 3850 4900 3850
+	5100 3850 4950 3850
 Wire Wire Line
-	4900 3850 4900 4900
+	4950 3850 4950 4900
 Wire Wire Line
-	4900 4900 6750 4900
+	4950 4900 7000 4900
 Wire Wire Line
-	6750 4900 6750 4050
+	7000 4900 7000 4050
 Wire Wire Line
-	6750 4050 6850 4050
+	7000 4050 7100 4050
 Wire Wire Line
 	4800 5000 4800 3250
 Wire Wire Line
-	4800 3250 5050 3250
+	4800 3250 5100 3250
 Wire Wire Line
 	2150 5000 4800 5000
-Text Label 4300 4500 0    50   ~ 0
-MISO
-Text Label 6550 2050 0    50   ~ 0
+Text Label 6800 2050 0    50   ~ 0
 RESET
 Wire Wire Line
-	2050 5200 5850 5200
+	2050 5200 5900 5200
+$Comp
+L Connector:TestPoint RX1
+U 1 1 5C91BD52
+P 5000 2950
+F 0 "RX1" V 5000 3200 50  0000 C CNN
+F 1 "TestPoint" V 5104 3022 50  0001 C CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 5200 2950 50  0001 C CNN
+	1    5000 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TX1
+U 1 1 5C91CE55
+P 5000 3050
+F 0 "TX1" V 5000 3300 50  0000 C CNN
+F 1 "TestPoint" V 5104 3122 50  0001 C CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 5200 3050 50  0001 C CNN
+	1    5000 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint D2
+U 1 1 5C91D441
+P 5000 3150
+F 0 "D2" V 5000 3400 50  0000 C CNN
+F 1 "TestPoint" V 5104 3222 50  0001 C CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5000 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint D5
+U 1 1 5C930A66
+P 5000 3450
+F 0 "D5" V 5000 3700 50  0000 C CNN
+F 1 "TestPoint" V 5104 3522 50  0001 C CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5000 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint D7
+U 1 1 5C930B59
+P 5000 3650
+F 0 "D7" V 5000 3900 50  0000 C CNN
+F 1 "TestPoint" V 5104 3722 50  0001 C CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 5200 3650 50  0001 C CNN
+	1    5000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint A0
+U 1 1 5C9340C0
+P 6600 3550
+F 0 "A0" V 6600 3738 50  0000 L CNN
+F 1 "TestPoint" V 6645 3738 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 3550 50  0001 C CNN
+	1    6600 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A1
+U 1 1 5C93416F
+P 6600 3650
+F 0 "A1" V 6600 3838 50  0000 L CNN
+F 1 "TestPoint" V 6645 3838 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 3650 50  0001 C CNN
+	1    6600 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A2
+U 1 1 5C934210
+P 6600 3750
+F 0 "A2" V 6600 3938 50  0000 L CNN
+F 1 "TestPoint" V 6645 3938 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6600 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A3
+U 1 1 5C9342D2
+P 6600 3850
+F 0 "A3" V 6600 4038 50  0000 L CNN
+F 1 "TestPoint" V 6645 4038 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 3850 50  0001 C CNN
+	1    6600 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A4
+U 1 1 5C934373
+P 6600 3950
+F 0 "A4" V 6600 4138 50  0000 L CNN
+F 1 "TestPoint" V 6645 4138 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 3950 50  0001 C CNN
+	1    6600 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A5
+U 1 1 5C934414
+P 6600 4050
+F 0 "A5" V 6600 4238 50  0000 L CNN
+F 1 "TestPoint" V 6645 4238 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 4050 50  0001 C CNN
+	1    6600 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A6
+U 1 1 5C9344B5
+P 6600 4150
+F 0 "A6" V 6600 4338 50  0000 L CNN
+F 1 "TestPoint" V 6645 4338 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 4150 50  0001 C CNN
+	1    6600 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint A7
+U 1 1 5C934BB3
+P 6600 4250
+F 0 "A7" V 6600 4438 50  0000 L CNN
+F 1 "TestPoint" V 6645 4438 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 6800 4250 50  0001 C CNN
+	1    6600 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2950 5000 2950
+Wire Wire Line
+	5000 3050 5100 3050
+Wire Wire Line
+	5100 3150 5000 3150
+Wire Wire Line
+	5000 3450 5100 3450
+Wire Wire Line
+	5100 3650 5000 3650
+$Comp
+L Connector:TestPoint SIN1
+U 1 1 5C940966
+P 8400 3600
+F 0 "SIN1" V 8400 3788 50  0000 L CNN
+F 1 "TestPoint" V 8445 3788 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 8600 3600 50  0001 C CNN
+	1    8400 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint SIN2
+U 1 1 5C940A15
+P 8400 3700
+F 0 "SIN2" V 8400 3888 50  0000 L CNN
+F 1 "TestPoint" V 8445 3888 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 8600 3700 50  0001 C CNN
+	1    8400 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3550 6600 3550
+Wire Wire Line
+	6600 3650 6500 3650
+Wire Wire Line
+	6500 3750 6600 3750
+Wire Wire Line
+	6600 3850 6500 3850
+Wire Wire Line
+	6500 3950 6600 3950
+Wire Wire Line
+	6600 4050 6500 4050
+Wire Wire Line
+	6500 4150 6600 4150
+Wire Wire Line
+	6600 4250 6500 4250
+Wire Wire Line
+	8300 3600 8400 3600
+Wire Wire Line
+	8400 3700 8300 3700
+$Comp
+L Connector:TestPoint SCK1
+U 1 1 5C959291
+P 4700 2400
+F 0 "SCK1" V 4700 2588 50  0000 L CNN
+F 1 "TestPoint" V 4745 2588 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4700 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint MOSI1
+U 1 1 5C959332
+P 4700 2500
+F 0 "MOSI1" V 4700 2688 50  0000 L CNN
+F 1 "TestPoint" V 4745 2688 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint MISO1
+U 1 1 5C9593D3
+P 4700 2600
+F 0 "MISO1" V 4700 2788 50  0000 L CNN
+F 1 "TestPoint" V 4745 2788 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4700 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2400 4500 2400
+Connection ~ 4500 2400
+Wire Wire Line
+	4500 2400 4500 2150
+Wire Wire Line
+	4700 2500 4600 2500
+Connection ~ 4600 2500
+Wire Wire Line
+	4600 2500 4600 3450
+Wire Wire Line
+	4300 3550 4300 2600
+Wire Wire Line
+	4300 2600 4700 2600
+Connection ~ 4300 3550
+$Comp
+L Connector:TestPoint 3v3
+U 1 1 5C9622E3
+P 7650 2150
+F 0 "3v3" V 7650 2338 50  0000 L CNN
+F 1 "TestPoint" V 7695 2338 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8600 3600 50  0001 C CNN
+F 3 "~" H 7850 2150 50  0001 C CNN
+	1    7650 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 2150 7550 2150
+Connection ~ 7550 2150
+Wire Wire Line
+	7550 2150 7550 2500
+$Comp
+L Connector:TestPoint GND1
+U 1 1 5C971FFF
+P 7800 4900
+F 0 "GND1" V 7800 5088 50  0000 L CNN
+F 1 "TestPoint" V 7845 5088 50  0001 L CNN
+F 2 "SigGen:Testpoint" H 8000 4900 50  0001 C CNN
+F 3 "~" H 8000 4900 50  0001 C CNN
+	1    7800 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 4900 7700 4900
+Connection ~ 7700 4900
+Wire Wire Line
+	7700 4900 7700 4400
 $EndSCHEMATC
