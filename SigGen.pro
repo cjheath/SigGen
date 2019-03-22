@@ -1,4 +1,4 @@
-update=Wednesday, 20 March 2019 at 09:33:12 pm
+update=Thursday, 21 March 2019 at 04:00:50 pm
 version=1
 last_client=kicad
 [general]
@@ -28,7 +28,10 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.25
+TrackWidth1=0.4
+TrackWidth2=0.25
+TrackWidth3=0.4
+TrackWidth4=0.5
 ViaDiameter1=1
 ViaDrill1=0.6
 ViaDiameter2=2.5
@@ -65,6 +68,17 @@ SolderPasteRatio=-0
 Name=PWR
 Clearance=0.2
 TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Thread
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=1
 ViaDrill=0.6
 uViaDiameter=0.3
